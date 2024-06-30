@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Задание 7</title>
+<script language="JavaScript">
+function subjects() {
+	school = new Array("ИЗО", "математика", "химия", "физика", "биология", "литература", "история", "обществознание")
+	human_sub = new Array()
+	human_sub = school.slice(5, 8)
+	exact_sub = new Array()
+	exact_sub = school.slice(2, 5)
+	document.write("Точные предметы: " + exact_sub + "<br>")
+	document.write("Гуманитарные предметы: " + human_sub)
+}
+</script>
+</head>
+<body>
+<script language="JavaScript">
+subjects()
+</script>
+</body>
+</html>

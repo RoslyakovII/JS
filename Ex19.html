@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Упражнение 19</title>
+<script language="JavaScript">
+function moveTxt() {
+var a = document.getElementById("a")
+var top = parseInt(a.style.top)
+var left = parseInt(a.style.left)
+if (top < 500 || left > 750) {
+top += 2
+a.style.top = top + "px"
+left -= 3
+a.style.left = left + "px"
+setTimeout(moveTxt, 50)
+}
+}
+</script>
+</head>
+<body onLoad="moveTxt()">
+<div id="a" style="position:absolute; left:1500px; top:10px;">
+Текст, шагом марш!
+</div>
+</body>
+</html>

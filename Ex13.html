@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Упражнение 13</title>
+</head>
+<body>
+<div>
+<img id="image" src="img.gif" alt="Изображение">
+</div>
+<script>
+const image = document.getElementById("image");
+function enlargeImage() {
+image.style.transform = "scale(1.5)";
+}
+function shrinkImage() {
+image.style.transform = "scale(1)";
+}
+image.addEventListener("mouseover", enlargeImage);
+image.addEventListener("mouseout", shrinkImage);
+</script>
+</body>
+</html>
